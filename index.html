@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief&family=Fontdiner+Swanky&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Pokemon</title>
 </head>
 <body>
@@ -14,7 +17,8 @@
         <input type="text" id="barra-busqueda" placeholder="Pikachu">
         <button type="button" id="btn-buscar">BUSCAR</button>
     </div>
-    <section>
+     
+    <section id="resultado">
         <h2>¡RESULTADO DE BÚSQUEDA!</h2>
         <div>
             <img id="imagen-principal" src="" alt="Pokémon">
@@ -26,6 +30,7 @@
         <h2>⭐ Mis Pokémon favoritos ⭐</h2>
         <p id="pokemon-guardado"></p>
     </section>
+    
     <script src="./js/app.js" type="module"></script>
 </body>
 </html>
