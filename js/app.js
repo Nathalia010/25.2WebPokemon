@@ -17,8 +17,8 @@ function saveFavorite(){
         localStorage.setItem("favoritos", JSON.stringify(favoritos));
         alert("Pokemon ha sido agregado a favoritos. ");
     }else{
-        
+        alert("Pokemon ya esta agregado a favoritos. ");
     }
 
-    upd
+    updateFavoritesList();
 }
