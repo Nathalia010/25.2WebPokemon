@@ -4,12 +4,12 @@ export const getPokemon = (namePokemon) => {
 
     return fetch(url)
         .then(function (response) {
-            if(!response.ok){
+            if (!response.ok) {
                 throw new Error('Pokémon no encontrado');
             }
             return response.json();
         })
-        .then(function (data){
-            return data
-        })
-}
+        .then(function (data) {
+            return data; 
+        });
+};
