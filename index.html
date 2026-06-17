@@ -7,30 +7,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Relief&family=Fontdiner+Swanky&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Pokemon</title>
+    <title>Pokemon Storage App</title>
 </head>
 <body>
+
     <header>
         <h1>POKÉMON STORAGE APP</h1>
     </header>
+
     <div id="busqueda">
-        <input type="text" id="barra-busqueda" placeholder="Pikachu">
-        <button type="button" id="btn-buscar">BUSCAR</button>
+        <input
+            type="text"
+            id="barra-busqueda"
+            placeholder="Pikachu"
+        >
+
+        <button
+            type="button"
+            id="btn-buscar"
+        >
+            BUSCAR
+        </button>
     </div>
-     
+
     <section id="resultado">
         <h2>¡RESULTADO DE BÚSQUEDA!</h2>
-        <div>
-            <img id="imagen-principal" src="" alt="Pokémon">
-            <p>Nombre: </p>
-            <button type="button" id="btn-favorito">Agregar a favoritos</button>
+
+        <div class="pokemon-card">
+            <img
+                id="imagen-principal"
+                src=""
+                alt="Pokémon"
+            >
+
+            <p id="nombre-pokemon">
+                Nombre:
+            </p>
+
+            <button
+                type="button"
+                id="btn-favorito"
+            >
+                Agregar a favoritos
+            </button>
         </div>
     </section>
+
     <section id="favoritos">
         <h2>⭐ Mis Pokémon favoritos ⭐</h2>
-        <p id="pokemon-guardado"></p>
+
+        <div id="pokemon-guardado"></div>
     </section>
-    
-    <script src="./js/app.js" type="module"></script>
+
+    <script type="module" src="./js/app.js"></script>
+
 </body>
 </html>
