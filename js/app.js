@@ -1,6 +1,5 @@
 let pokemonActual = null;
 
-
 function saveFavorite(){
     if(!pokemonActual){
         alert("Debes de buscar un pokemon");
@@ -18,12 +17,12 @@ function saveFavorite(){
         localStorage.setItem("favoritos", JSON.stringify(favoritos));
         alert("Pokemon ha sido agregado a favoritos. ");
     }else{
-        
+        alert("Pokemon ya esta agregado a favoritos. ");
     }
-
 }
-
-
+    updateFavoritesList();
+}
+}
 const barraBusqueda = document.getElementById("barra-busqueda");
 const btnBuscar = document.getElementById("btn-buscar");
 const btnFavorito = document.getElementById("btn-favorito");
@@ -35,4 +34,3 @@ btnFavorito.addEventListener("click", saveFavorite);
 document.addEventListener("DOMContentLoaded", function () {
     updateFavoritesList();
 });
-
