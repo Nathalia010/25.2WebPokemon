@@ -1,6 +1,5 @@
 let pokemonActual = null;
 
-<<<<<<< Updated upstream
 
 function saveFavorite(){
     if(!pokemonActual){
@@ -19,12 +18,13 @@ function saveFavorite(){
         localStorage.setItem("favoritos", JSON.stringify(favoritos));
         alert("Pokemon ha sido agregado a favoritos. ");
     }else{
-        
+        alert("Pokemon ya esta agregado a favoritos. ");
     }
 
+    updateFavoritesList();
+}
     upd
 }
-=======
 const barraBusqueda = document.getElementById("barra-busqueda");
 const btnBuscar = document.getElementById("btn-buscar");
 const btnFavorito = document.getElementById("btn-favorito");
@@ -35,4 +35,4 @@ btnFavorito.addEventListener("click"savefavorite);
 document.addEventListener("DOMContentLoaded", function() {
     updateFavoritesList();
 });
->>>>>>> Stashed changes
+
