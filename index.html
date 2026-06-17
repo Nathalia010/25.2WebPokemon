@@ -7,8 +7,25 @@
     <title>Pokemon</title>
 </head>
 <body>
-
-
+    <header>
+        <h1>POKÉMON STORAGE APP</h1>
+    </header>
+    <div id="busqueda">
+        <input type="text" id="barra-busqueda" placeholder="Pikachu">
+        <button type="button" id="btn-buscar">BUSCAR</button>
+    </div>
+    <section>
+        <h2>¡RESULTADO DE BÚSQUEDA!</h2>
+        <div>
+            <img id="imagen-principal" src="" alt="Pokémon">
+            <p>Nombre: </p>
+            <button type="button" id="btn-favorito">Agregar a favoritos</button>
+        </div>
+    </section>
+    <section id="favoritos">
+        <h2>⭐ Mis Pokémon favoritos ⭐</h2>
+        <p id="pokemon-guardado"></p>
+    </section>
     <script src="./js/app.js" type="module"></script>
 </body>
 </html>
