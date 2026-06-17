@@ -1,6 +1,5 @@
 let pokemonActual = null;
 
-
 function saveFavorite(){
     if(!pokemonActual){
         alert("Debes de buscar un pokemon");
@@ -20,19 +19,18 @@ function saveFavorite(){
     }else{
         alert("Pokemon ya esta agregado a favoritos. ");
     }
-
+}
     updateFavoritesList();
 }
-    upd
 }
 const barraBusqueda = document.getElementById("barra-busqueda");
 const btnBuscar = document.getElementById("btn-buscar");
 const btnFavorito = document.getElementById("btn-favorito");
 
 btnBuscar.addEventListener("click", searchPokemon);
-btnFavorito.addEventListener("click"savefavorite);
+btnFavorito.addEventListener("click", saveFavorite);
 
-document.addEventListener("DOMContentLoaded", function() {
+//Llama a updateFavoritesList() para mostrar los favoritos guardados.
+document.addEventListener("DOMContentLoaded", function () {
     updateFavoritesList();
 });
-
